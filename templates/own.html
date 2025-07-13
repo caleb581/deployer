@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>myweb</title>
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/own.css')}}">
+  <script src="{{url_for('static',filename='javascripts/own.js')}}" defer></script>
+  <link rel="stylesheet" href="{{url_for('static', filename='web_font/font-awesome.mine.css')}}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/aos .css') }}"> 
+  
+
+</head>
+
+<body>
+  <main id="home">
+    <div class="container">
+      <h1 style="color: white; padding-left: 10%; padding-top: 3%;  " class="h1">caleb</h1>
+      <nav class="nav">
+
+
+        <div class="narv">
+
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about"> about</a></li>
+            <li><a href="#service"> service</a></li>
+            <li><a href="#project"> project</a></li>
+            <li><a href="#contact">contact</a></li>
+
+
+
+          </ul>
+
+
+        </div>
+        <div class="div">
+          <button type="button" class="menu" style="height: 25px;"> <span>Toggle menu </span> </button>
+        </div>
+        <div class="narv_icone"><br>
+
+          <ul>
+            <li><a href="#home">home</a></li>
+            <li><a href="#about"> about</a></li>
+            <li><a href="#service"> service</a></li>
+            <li><a href="#project"> project</a></li>
+            <li><a href="#contact">contact</a></li><br>
+          </ul>
+          <button type="button" class="cancle" style="font-size: larger;"> cancle X </button>
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+      </nav>
+
+
+
+    </div>
+
+    <section>
+
+      <div class="none">
+        <div class="detail">
+
+          <h1 style="color: white; font-size: 340%">Welcome!</h1>
+          <h2 style="color: white;">i'm caleb</h2>
+          <h4 style="color: aqua;">A Web Developer</h4> <br><br>
+
+          <a href=""> <i class=" fa fa-instagram"></i> </a>
+          <a href=""> <i class=" fa fa-twitter"></i> </a>
+          <a href=""> <i class="fa fa-linkedin"></i> </a>
+          <a href=""> <i class=" fa fa-tiktok"></i></a>
+          <a href="https://api.whatsapp.com/send/?phone=%2B2348136845853&text&type=phone_number&app_absent=0"> <i
+              class=" fa fa-whatsapp"></i></a>
+
+
+
+
+          <div class="download"> <br> <br>
+
+            <button class="button"> <a download href="{{url_for('static', filename = 'image/off.jpg')}}">Download CV</a></button>
+          </div>
+
+        </div>
+
+        <div class="images">
+          <picture>
+           
+
+          <source media="(min-width: 768px)" srcset="{{ url_for('static', filename='image/off.jpg') }}">
+          <source media="(min-width: 480px)" srcset="{{ url_for('static', filename='image/off.jpg') }}">
+          <img src="{{ url_for('static', filename='image/off.jpg') }}" alt="owner's picture" width="400px" height="470vh">
+        
+
+
+
+          </picture>
+        </div>
+      </div>
+    </section><br><br><br><br>
+
+    <section class="seck" id="about">
+
+      <div class="ever">
+        <h1>ABOUT ME</h1><br>
+        <p>
+          I’m a Frontend Web Developer skilled in HTML, CSS, Bootstrap, and JavaScript.
+          My journey began with a fascination for how websites come to life, and I’m dedicated
+          to creating engaging user experiences. <br><br>
+
+          With a solid foundation in HTML and CSS, I enjoy building responsive layouts using Bootstrap.
+          My JavaScript skills enhance interactivity in my projects.
+
+          Currently, I'm diving into React to further develop modern web applications,
+          with plans to expand into backend development for a full-stack perspective. <br><br>
+
+          I believe in continuous learning and thrive on challenges that push me to grow. Outside of coding,
+          I enjoy exploring design trends, reading, and watching football matches.
+
+          Feel free to check out my portfolio and connect!
+        </p>
+
+
+      </div>
+
+
+    </section><br><br>
+
+    <section class="service" id="service">
+      <h1 style="color:wheat;">My <span style="color: aqua;">Service</span></h1>
+
+      <div class="service_content">
+
+
+
+        <div class="service_1" data-aos="fade-right" style="transition: 0.9s ease;">
+          <h3>frontend web deverlopement</h3><br>
+          <p style="font-size: large;">
+            I create responsive web designs that provide an optimal user experience
+            across all devices. Using flexible layouts and fluid images, I ensure seamless adaptation to different
+            screen sizes. Media queries allow me to customize styles for mobile and desktop,
+            delivering solutions that effectively meet your goals.
+
+          </p>
+
+
+        </div><br><br>
+
+        <div class="service_2" data-aos="fade-left" style="transition: 0.9s ease;">
+          <h3>responsive web design</h3><br>
+          <p style="font-size: large;">
+            As a frontend web developer, I specialize in crafting visually appealing and user-friendly websites
+            that elevate your online presence. I combine aesthetics with functionality to create engaging user
+            experiences that keep visitors coming back. Currently diving into React to further develop modern
+            web applications.
+
+
+          </p>
+
+
+        </div>
+
+
+
+
+
+      </div>
+
+
+    </section>
+
+    <section class="project" id="project">
+
+      <div class="me">
+
+        <h1 style="color: white;">My <span style="color: aqua;">Project</span></h1>
+        <div class="init" data-aos="fade-right" style="transition: 0.9s ease;">
+          <picture class="picture_2">
+         
+
+            <source media="(min-width: 768px)" srcset="{{url_for('static',filename = 'image/you.jpg')}}">
+            <source media="(min-width: 746px)" srcset="{{url_for('static', filename = 'image/you.jpg')}}">
+            <img src="{{url_for('static',filename='image/you.jpg')}}" alt="web image" loading="lazy" style="width: 160%; height:auto ;">
+          </picture>
+
+
+
+
+        </div>
+
+
+        <div class="ink" data-aos="fade-left" style="transition: 0.9s ease;">
+
+
+
+          <picture class="picture_1">
+            <source media="(min-width: 768px)" srcset="{{url_for('static', filename='image/me.jpg')}}">
+            <source media="(min-width: 746px)" srcset="{{url_for('static', filename='image/me.jpg')}}"> <!-- ✅ Fixed '=' sign -->
+            <img src="{{ url_for('static', filename='image/me.jpg') }}"alt="web internet"loading="lazy" style="width: 160%; height: auto; ">
+            
+
+          </picture>
+
+
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+
+    </section>
+
+
+    <div class="contact" id="contact">
+
+      <span class="span">
+
+        <a href="https://api.whatsapp.com/send/?phone=%2B2348136845853&text&type=phone_number&app_absent=0"> <button
+            style="height: 5.4vh; ">contact me on whatsapp</button> </a>
+
+
+      </span>
+
+
+     </div>
+
+
+
+
+
+
+  </main>
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+<script src="{{ url_for('static', filename='js/aos.js') }}"></script>
+<script>
+  AOS.init({
+    duration: 700,
+    once: false,
+    offset: 120,
+  });
+</script>
+
+
+
+</html>
+
